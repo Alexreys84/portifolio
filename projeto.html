@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Fundo escuro */
+            color: #ffffff; /* Cor do texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Centraliza verticalmente */
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left; /* Alinha o conteúdo à esquerda */
+            padding-left: 20px; /* Adiciona um espaçamento à esquerda */
+        }
+
+        header ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header ul li a {
+            color: #ffffff; /* Cor do link */
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        header ul li a:hover {
+            color: #007bff; /* Cor do link ao passar o mouse */
+        }
+
+        /* Estilo da Seção do Projeto */
+        .projeto {
+            text-align: center;
+        }
+
+        .projeto h3 {
+            font-size: 32px; /* Tamanho da fonte aumentado */
+            margin-bottom: 20px;
+        }
+
+        .projeto .social img {
+            width: 200px; /* Tamanho da imagem */
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .projeto .social img:hover {
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
+
+        /* Estilo da seta piscante */
+        .seta {
+            margin-top: 20px;
+            font-size: 30px;
+            animation: piscar 1s infinite;
+        }
+
+        /* Animação da seta piscante */
+        @keyframes piscar {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+    <section class="projeto">
+        <div>
+            <h3>Ir para os Projetos.</h3>
+        </div>
+        <div class="seta">
+            <img src="./img/seta.png" alt="Seta piscante"> <!-- Imagem da seta -->
+        </div> <!-- Seta piscante com imagem -->
+        <div class="social">
+            <a href="https://github.com/alexreys84" target="_blank">
+                <img src="./img/github2.png" alt="GitHub">
+            </a>
+        </div>        
+    </section>
+</body>
+</html>
