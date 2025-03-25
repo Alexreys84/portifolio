@@ -1,0 +1,343 @@
+:root {
+    --primary-color: #4d7cfe;
+    --background-color: #0a0a0a;
+    --card-background: #1a1a1a;
+    --text-color: #fff;
+    --text-muted: #bbb;
+    --hover-color: #365bb0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Seção principal */
+.principal {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    min-height: 85vh;
+
+}
+
+.principal h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.principal h1 span {
+    color: var(--primary-color);
+}
+
+.principal p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 500px;
+    color: var(--text-muted);
+}
+.principal h2{
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+/* Estilo para a seção principal */
+.foto-pricipal {
+    display: flex; /* Usa flexbox para alinhar os elementos */
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 20px; /* Espaçamento entre a foto e as informações */
+    max-width: 800px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção na página */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para a div da foto */
+.foto {
+    flex: 0 0 auto; /* Impede que a foto cresça ou diminua */
+}
+
+.foto img {
+    max-width: 230px; /* Largura máxima da foto */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Borda arredondada na foto */
+}
+
+/* Estilo para a div das informações */
+.informacoes {
+    flex: 1; /* Faz com que as informações ocupem o espaço restante */
+}
+
+.informacoes h2 {
+    margin-top: 0; /* Remove a margem superior do título */
+    font-size: 24px; /* Tamanho da fonte do nome */
+    color: #333; /* Cor do texto */
+}
+
+.informacoes p {
+    font-size: 16px; /* Tamanho da fonte da idade */
+    color: #555; /* Cor do texto */
+}
+
+.informacoes h3 {
+    font-size: 20px; /* Tamanho da fonte do subtítulo */
+    color: #333; /* Cor do texto */
+    margin-top: 20px; /* Espaçamento acima do subtítulo */
+    text-align: center;
+}
+.informacoes h4{
+    font-size: 20px; /* Tamanho da fonte do subtítulo */
+    color: #333; /* Cor do texto */
+    margin-top: 20px; /* Espaçamento acima do subtítulo */
+    text-align: center;
+}
+
+/* Estilo para a lista com marcadores */
+.informacoes ul {
+    list-style-type: disc; /* Usa marcadores de bolinha (padrão) */
+    padding-left: 20px; /* Adiciona um padding à esquerda para alinhar os marcadores */
+    margin: 0; /* Remove a margem padrão da lista */
+    display: block; /* Garante que cada item ocupe uma linha inteira */
+    color: #333; /* Cor do texto */
+}
+/* Seção Entre em Contato */
+.contato {
+    padding: 50px 5%;
+    background: var(--card-background);
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.contato .titulo-secao {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato label {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.contato input,
+.contato textarea {
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    border-color: var(--hover-color);
+    outline: none;
+}
+
+.contato textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contato button {
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contato button:hover {
+    background-color: var(--hover-color);
+}
+
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 600px) {
+    .foto-pricipal {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os elementos */
+    }
+
+    .foto img {
+        max-width: 150px; /* Reduz o tamanho da foto em telas menores */
+    }
+
+    .informacoes {
+        text-align: center; /* Centraliza o texto em telas menores */
+    }
+}
+
+/* Botão */
+.botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.botao:hover {
+    background-color: var(--hover-color);
+}
+
+/* Seção Projetos */
+.secao {
+    padding: 50px 5%;
+}
+
+.titulo-secao {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Grid dos projetos */
+.info-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Estilização dos Cards */
+.card-projeto {
+    background: var(--card-background);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-projeto:hover {
+    transform: scale(1.05);
+}
+
+.img-projeto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-projeto div {
+    padding: 20px;
+}
+
+.card-projeto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-projeto p {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+.card-projeto a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.card-projeto a:hover {
+    background-color: var(--hover-color);
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .principal h1 {
+        font-size: 50px;
+    }
+    .info-projetos {
+        grid-template-columns: 1fr;
+    }
+    .social-links {
+        flex-wrap: wrap;
+    }
+}
