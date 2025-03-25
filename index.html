@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Alex Reis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projeto.html">Projetos</a></li>
+        </ul>
+    </header>
+
+    <section class="principal">
+        <div class="conteudo-principal">
+            <div class="texto">
+                <h1>Olá, eu sou <span>Alex dos Reis</span>.</h1>
+                <p>Desenvolvedor criativo focado em construir experiências digitais 
+                    excepcionais e interfaces intuitivas.</p>
+                <h2>Meu objetivo</h2>
+                <p>Criar soluções inovadoras que tragam não apenas a estética,
+                 mas a funcionalidade como base. Com foco na performance e experiência do usuário, 
+                 busco transformar ideias criativas em soluções digitais de impacto.</p>                 
+            </div>           
+        </div>
+        <div class="contato">
+            <h2>Entre em Contato</h2>
+            <form onsubmit="enviarEmail(event)">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+                <textarea id="mensagem" placeholder="Sua Mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="foto-pricipal">
+        <div class="foto">
+            <img src="./img" alt="Foto de Alex Reis"> 
+        </div>
+        <div class="informacoes">
+            <h2>Alex dos Reis</h2>
+            <p><strong>Idade:</strong> 40 anos</p>
+            <h3>Tecnico em Informática - SENAC </h3>
+            <h4>Período 03/05/2023 há 01/10/2024 </h4>
+            <ul>
+                <li>Fundamentos de Informática: Hardware, Software e Sistemas Operacionais</li>       
+                <li> Programação: Java, Python, Javascript, C#, lógica de programação</li> 
+                <li>Banco de Dados: SQL, MySQL, gerenciamento de dados </li> 
+                <li>Desenvolvimento Web: HTML, CSS, Javascript, frameworks (Bootstrap) </li> 
+                <li>Redes de Computadores: Protocolos, IP, configuração de redes</li> 
+                <li>Manutenção de Computadores: Montagem, configuração de hardware</li>
+                <li>Segurança da Informação: Proteção de dados e segurança de redes</li>
+                <li>Sistemas Operacionais: Windows, Linux</li>
+                <li>Empreendedorismo e Gestão de Projetos</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="secao">
+        <h2 class="titulo-secao">Projetos</h2>
+        <div class="info-projetos">
+            <div class="card-projeto">
+                <img class="img-projeto" src="./img/logomurilo.jpg" alt="Imagem do projeto 1">
+                <div>
+                    <h3>Desenvolvedor Front-end</h3>
+                    <p>Uma página Front criada com HTML, CSS e JavaScript.</p>
+                    <a href="https://alexreys84.github.io/wa-estampas/">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <img class="img-projeto" src="./img/banner.webp" alt="shopnow">
+                <div>
+                    <h3>Loja Virtual</h3>
+                    <p>Um e-commerce responsivo desenvolvido com Bootstrap e JavaScript.</p>
+                    <a href="https://alexreys84.github.io/Shopnow/">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <img class="img-projeto" src="./img/Dashboard.png" alt="Dashboard">
+                <div>
+                    <h3>Dashboard Interativo</h3>
+                    <p>Uma dashboard dinâmica com gráficos e interatividade em JavaScript.</p>
+                    <a href="https://alexreys84.github.io/Dashboard/">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="https://wa.me/11942062810" target="_blank"><img src="./img/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/?ref=homescreenpwa" target="_blank"><img src="./img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/alex_reys84/?__pwa=1" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/alex-dos-reis-2304a156/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Alexreys84" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
+        </div>
+        <p>Criado por Alex Reis</p>
+    </footer>
+
+</body>
+</html>
